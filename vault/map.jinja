@@ -48,5 +48,9 @@
     'upstart': {
         'init_file': '/etc/init/vault.conf',
         'init_source': 'salt://vault/files/vault.upstart'
-    }
+    },
+    'unknown': {
+        'init_file': '/etc/init/vault.conf',
+        'init_source': 'salt://vault/files/vault.upstart'
+    },
 }, grain='init', merge=salt.pillar.get('vault:service')) %}
